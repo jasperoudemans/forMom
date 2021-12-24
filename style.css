@@ -29,7 +29,7 @@ header {
   width: 40%;
   text-decoration: none;
   font-size: 20px;
-  color: black;
+  color: rgb(165, 189, 142);
   border: 2px solid grey;
   border-radius: 5px;
   text-align: center;
@@ -37,8 +37,8 @@ header {
 }
 
 .video:hover {
-  background-color: grey;
-  color: whitesmoke;
+  background-color: rgb(165, 189, 142);
+  color: rgb(173, 106, 106);
   border: 5px solid rgb(173, 106, 106);
 }
 
