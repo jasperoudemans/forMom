@@ -1,18 +1,21 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  --pink: rgb(173, 106, 106);
+  --lightGrn: rgb(165, 189, 142);
 }
 
 body {
   padding: 0;
   margin: 0;
   background-color: rgb(73, 73, 112);
+  position: relative;
 }
 
 header {
   margin: 0;
   padding: 1rem;
-  background-color: rgb(173, 106, 106);
-  color: rgb(165, 189, 142);
+  background-color: var(--pink);
+  color: var(--lightGrn);
   text-align: center;
   font-size: 20px;
 }
@@ -29,7 +32,7 @@ header {
   width: 40%;
   text-decoration: none;
   font-size: 20px;
-  color: rgb(165, 189, 142);
+  color: var(--lightGrn);
   border: 2px solid grey;
   border-radius: 5px;
   text-align: center;
@@ -37,16 +40,25 @@ header {
 }
 
 .video:hover {
-  background-color: rgb(165, 189, 142);
-  color: rgb(173, 106, 106);
-  border: 5px solid rgb(173, 106, 106);
+  transition: ease-in-out 0.2s;
+  background-color: var(--lightGrn);
+  color: var(--pink);
+  border: 2px solid var(--pink);
+}
+
+.parent {
+  margin-top: 1rem;
 }
 
 footer {
   padding: 1rem;
+  color: var(--lightGrn);
+  border: 2px solid var(--pink);
+  border-radius: 4px;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-evenly;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
